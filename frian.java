@@ -8,18 +8,18 @@ public class frian {
         // product code 
         String[][] list = {
         // code desc price
-            {"101A", "Spotify Premium", "500"},
-            {"1,0", "1,1", "1,2"},
-            {"2,0", "2,1", "2,2"},
-            {"3,0", "3,1", "3,2"},
-            {"4,0", "4,1", "4,2"}
+            {"101A", "Spotify Premium", "500.00"},
+            {"SB28", "Facebook", "300.00"},
+            {"34DS", "Twitter", "150.00"},
+            {"9DB3", "Youtube", "250.00"},
+            {"03CN", "Instagram", "400.00"}
         };
         
         System.out.print("Enter a Product Code: ");
         String input = sc.nextLine();
-        System.out.print("Quantity: ");
+        System.out.print("Quantity: "); 
         int quanti = sc.nextInt();
-
+        System.out.println("");
         for (int i = 0; i < list.length; i++) {
             for (int j = 1; j < 2; j++) {
 
@@ -29,10 +29,11 @@ public class frian {
                     System.out.println("Description: " + list[i][1]);
                     System.out.println("Price: " + list[i][2]);
                     System.out.println("Quantity: " + quanti);
-                    int price = Integer.valueOf(list[i][2]);
-                    int amount = quanti * price;
-                    System.out.println("Amount: " + amount );
-                    
+                    double price = Double.valueOf(list[i][2]);
+                    double amount = quanti * price;
+                    System.out.println("Amount: " + amount + "0");
+                    System.out.println("");
+                    System.out.println("Thank you for your business!");
                 } 
             }
         }
